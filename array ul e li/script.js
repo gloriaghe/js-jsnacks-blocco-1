@@ -5,15 +5,31 @@ const arrayDue = ["parola1-2", "parola2-2"];
 
 const stampa = document.querySelector("ul");
 
-for (let i = 0; i < 5; i++) {
+ for (let i = 0; i < 5; i++) {
     
-    const element = `<li> ${arrayUno[i]}<ul class="ulInterno" ></ul></li>`;
-    stampa.innerHTML += element;
-   
-}
+     const element = `<li> ${arrayUno[i]}<ul></ul></li>`;
+    
+     // stampa.innerHTML += element;
 
- for (let i = 0; i < 2; i++) {
-     const stampaDue = document.getElementsByClassName("ulInterno");
-     const elementDue = `<li> ${arrayDue[i]}</li>`;
-     stampaDue.innerHTML += elementDue;
+     for (let i = 0; i < 2; i++) {
+         const stampaDue = document.querySelector("li>ul");
+         const elementDue = element + `<li> ${arrayDue[i]}</li>`;
+    
+    
+         // stampa.innerHTML += element;
+         stampaDue.innerHTML += elementDue;
      }
+ }
+
+// for (let i = 0; i < 5; i++) {
+    
+//     const element = `<li> ${arrayUno[i]}<ul class="ulInterno" ></ul></li>`;
+//     stampa.innerHTML += element;
+   
+// }
+
+//  for (let i = 0; i < 2; i++) {
+//      const stampaDue = document.getElementsByClassName("ulInterno");
+//      const elementDue = `<li> ${arrayDue[i]}</li>`;
+//      stampaDue.innerHTML += elementDue;
+//      }
