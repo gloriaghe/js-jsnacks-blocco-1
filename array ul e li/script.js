@@ -12,18 +12,18 @@ const stampa = document.querySelector("ul");
      // stampa.innerHTML += element;
 
      for (let i = 0; i < 2; i++) {
-         const stampaDue = document.querySelector("li>ul");
-         const elementDue = element + `<li> ${arrayDue[i]}</li>`;
+         const stampaDue = document.createElement("li");
+         stampaDue.append(arrayDue[i]);
     
     
          // stampa.innerHTML += element;
-         stampaDue.innerHTML += elementDue;
+         stampaDue.append(elementDue);
      }
  }
 
 
 
- 
+
 // for (let i = 0; i < 5; i++) {
     
 //     const element = `<li> ${arrayUno[i]}<ul class="ulInterno" ></ul></li>`;
