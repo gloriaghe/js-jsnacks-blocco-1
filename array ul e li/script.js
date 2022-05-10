@@ -9,12 +9,11 @@ for (let i = 0; i < 5; i++) {
     
     const element = `<li> ${arrayUno[i]}<ul></ul></li>`;
     stampa.innerHTML += element;
-
-    
+   
 }
 
-for (let i = 0; i < 2; i++) {
-    const stampaDue = document.querySelector("li>ul");
-    const elementDue = `<li> ${arrayDue[i]}</li>`;
-    stampaDue.innerHTML += elementDue;
-    }
+ for (let i = 0; i < 2; i++) {
+     const stampaDue = document.querySelector("li>ul");
+     const elementDue = `<li> ${arrayDue[i]}</li>`;
+     stampaDue.innerHTML += elementDue;
+     }
