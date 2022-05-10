@@ -21,6 +21,9 @@ const stampa = document.querySelector("ul");
      }
  }
 
+
+
+ 
 // for (let i = 0; i < 5; i++) {
     
 //     const element = `<li> ${arrayUno[i]}<ul class="ulInterno" ></ul></li>`;
