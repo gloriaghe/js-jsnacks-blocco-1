@@ -6,7 +6,7 @@ const arrayDue = ["parola1-2", "parola2-2"];
 const stampa = document.querySelector("ul");
 
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < arrayUno.length; i++) {
     
     const creatoli = document.createElement("li");
     const newContent = document.createTextNode(arrayUno[i]);
@@ -14,7 +14,7 @@ for (let i = 0; i < 5; i++) {
     const creatoul =document.createElement("ul");
     creatoli.append(creatoul);
 
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < arrayDue.length; i++) {
         const creatoliDue = document.createElement("li");
         const newContentDue = document.createTextNode(arrayDue[i]);
         creatoliDue.append(newContentDue);
