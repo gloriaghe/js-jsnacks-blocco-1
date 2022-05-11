@@ -12,9 +12,9 @@ for (let i = 0; i < arrayUno.length; i++) {
     const creatoul =document.createElement("ul");
     creatoli.append(creatoul);
 
-    for (let i = 0; i < arrayDue.length; i++) {
+    for (let j = 0; j < arrayDue.length; j++) {
         const creatoliDue = document.createElement("li");
-        const newContentDue = arrayDue[i];
+        const newContentDue = arrayDue[j];
         creatoliDue.append(newContentDue);
         creatoul.append(creatoliDue);
        }
