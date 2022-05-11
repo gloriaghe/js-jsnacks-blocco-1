@@ -1,38 +1,28 @@
 const arrayUno = ["parola1-1", "parola2-1","parola3-1","parola4-1","parola5-1"];
-console.log(arrayUno)
+console.log(arrayUno);
 
 const arrayDue = ["parola1-2", "parola2-2"];
 
 const stampa = document.querySelector("ul");
 
- for (let i = 0; i < 5; i++) {
+
+for (let i = 0; i < 5; i++) {
     
-     const element = `<li> ${arrayUno[i]}<ul></ul></li>`;
-    
-     // stampa.innerHTML += element;
+    const creatoli = document.createElement("li");
+    const newContent = document.createTextNode(arrayUno[i]);
+    creatoli.append(newContent);
+    const creatoul =document.createElement("ul");
+    creatoli.append(creatoul);
 
-     for (let i = 0; i < 2; i++) {
-         const stampaDue = document.createElement("li");
-         stampaDue.append(arrayDue[i]);
-    
-    
-         // stampa.innerHTML += element;
-         stampaDue.append(elementDue);
-     }
- }
+    for (let i = 0; i < 2; i++) {
+        const creatoliDue = document.createElement("li");
+        const newContentDue = document.createTextNode(arrayDue[i]);
+        creatoliDue.append(newContentDue);
+        creatoul.append(creatoliDue);
+        
+       }
+
+    stampa.append(creatoli);
+}
 
 
-
-
-// for (let i = 0; i < 5; i++) {
-    
-//     const element = `<li> ${arrayUno[i]}<ul class="ulInterno" ></ul></li>`;
-//     stampa.innerHTML += element;
-   
-// }
-
-//  for (let i = 0; i < 2; i++) {
-//      const stampaDue = document.getElementsByClassName("ulInterno");
-//      const elementDue = `<li> ${arrayDue[i]}</li>`;
-//      stampaDue.innerHTML += elementDue;
-//      }

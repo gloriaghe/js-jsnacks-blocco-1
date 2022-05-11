@@ -11,8 +11,8 @@ const ArrayDispHtml = document.querySelector("#arraydispari");
  mioBottone.addEventListener("click",
     function(){
          const myarray = [];
-         ArrayPariHtml.innerHTML = " ";
-         ArrayDispHtml.innerHTML = " ";
+         ArrayPariHtml.innerHTML = "";
+         ArrayDispHtml.innerHTML = "";
 
 
         for (let i = 0; i < 20; i++) {
